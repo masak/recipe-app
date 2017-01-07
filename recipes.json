@@ -77,6 +77,7 @@
         "name": "Pumpkin pie",
         "servings": 8,
         "time": "60 minutes + cooling",
+        "description": "Pumpkin pie is a traditional American and Canadian holiday dessert. It consists of a pumpkin-based custard baked in a single pie shell. The pie is traditionally served with whipped cream.",
         "ingredients": [
             [5, "dl", "milk, scalded"],
             [450, "g", "pumpkin, cooked and strained (or plain canned pumpkin). Use the smaller 'Sugar Pumpkin' instead of the big 'Jack O Lantern' pumpkin. The smaller 'Sugar Pumpkin' has a firm and smooth texture while the larger 'Jack O Lantern' pumpkin has more stringy or fibrous texture and more watery for a flesh."],
