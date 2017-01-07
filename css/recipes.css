@@ -60,6 +60,6 @@ body {
   color: #ea2;
   margin-bottom: 0;
   position: absolute;
-  bottom: 0;
+  bottom: -1em;
   left: 0.5em;
 }
