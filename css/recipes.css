@@ -1,10 +1,16 @@
 body {
   background: #eee;
-  border-top: solid 2em #999;
+}
+
+.navbar-recipes {
+  background: #999;
+  min-height: 2em;
+  margin-bottom: 2em;
+  border: none;
+  border-radius: 0;
 }
 
 #recipe-search {
-  margin-top: 2em;
   text-align: center;
 }
 
