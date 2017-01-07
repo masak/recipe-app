@@ -51,6 +51,10 @@ body {
   height: 250px;
 }
 
+.recipe h2 {
+  font-weight: bold;
+}
+
 .recipe-rating {
   font-size: 200%;
   color: #ea2;
