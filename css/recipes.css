@@ -46,7 +46,8 @@ body {
 }
 
 .recipe > .description {
-  padding: 1em;
+  padding-top: 1ex;
+  padding-left: 2em;
   position: relative;
   height: 250px;
 }
@@ -61,5 +62,5 @@ body {
   margin-bottom: 0;
   position: absolute;
   bottom: -1em;
-  left: 0.5em;
+  left: 1em;
 }
