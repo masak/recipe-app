@@ -1,0 +1,58 @@
+body {
+  background: #eee;
+  border-top: solid 2em #999;
+}
+
+#recipe-search {
+  margin-top: 2em;
+  text-align: center;
+}
+
+#recipe-search > input {
+  border: solid 1px #ccc;
+  border-radius: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 2em;
+  width: 400px;
+}
+
+#recipe-search > input:focus {
+  outline: none;
+}
+
+.recipe {
+  background: white;
+  box-shadow: 0px 0px 10px 0px #ccc;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  height: 300px;
+  cursor: default;
+}
+
+.recipe:hover {
+  background: #ddd;
+}
+
+.recipe > img {
+  float: right;
+  padding-left: 1em;
+}
+
+.recipe > .description {
+  padding: 1em;
+  position: relative;
+  height: 250px;
+}
+
+.recipe-rating {
+  font-size: 200%;
+  color: #ea2;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0.5em;
+}
