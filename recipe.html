@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+
+    <title>Recipes</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/recipes.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-recipes">
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div id="recipe-search"><input placeholder="search for recipes"></div>
+          <div class="recipe">
+            <div class="row">
+              <div class="col-md-12">
+                <img src="images/french-toast.jpg">
+                <div class="description">
+                  <h2>French toast</h2>
+                  <p class="lead">French toast is a common breakfast item made by frying a piece of bread soaked in an egg batter.</p>
+
+                  <p class="recipe-rating">★★★☆☆</p>
+
+                  <div>
+                    Servings: 1<br>
+                    Time: 10 minutes<br>
+                    Level: Easy
+                  </div>
+
+                  <h3>Description</h3>
+                  <p>French toast was developed as a way to use day-old stale bread. When lacking stale bread, toasting your bread lightly will help it absorb more of the egg and milk batter.</p>
+                  <p>French toast is usually served with toppings similar to those used for pancakes, waffles, and toast. Suggested toppings are:</p>
+                  <ul>
+                    <li>real maple syrup, table syrup</li>
+                    <li>jam, jelly, fruit syrup</li>
+                    <li>whipped cream</li>
+                    <li>powdered sugar</li>
+                    <li>nuts</li>
+                    <li>honey (as served in China)</li>
+                    <li>bacon</li>
+                    <li>raspberries and/or strawberries and/or blueberries</li>
+                  </ul>
+                  <p>It can also be served as part of a fried breakfast with savory foods like sausages (or vegetarian equivalent), tomato (or ketchup), baked beans, fried mushrooms etc.</p>
+                  <p>This recipe is easily scalable. The simplest thing to do is to memorize the recipe for two slices (1 serving), and then multiply to make more. You can coat slightly more than one serving with the wet parts of the recipe (2 1/4 - 2 1/2 normal-sized slices).</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-5">
+                <div class="recipe-ingredients">
+                  <h3>Ingredients</h3>
+                  <ul>
+                    <li>1 egg</li>
+                    <li>0.5 dl milk</li>
+                    <li>2 slices bread, preferably one-inch slices of French bread</li>
+                    <li>butter (best), margarine, or cooking oil</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-md-7">
+                <div class="recipe-procedure">
+                  <h3>Procedure</h3>
+                  <ol>
+                    <li>In a bowl, mix eggs and milk, and optional ingredients.</li>
+                    <li>Heat up a frying pan, skillet or griddle to medium-low heat.</li>
+                    <li>Grease the pan with butter, margarine, or cooking spray.</li>
+                    <li>Soak a slice of bread in the egg-milk mixture and place on pan; repeat until pan is full or desired amount is placed.</li>
+                    <li>Brown both sides bread.</li>
+                    <li>Serve on plates, usually two slices per person, with toppings as desired.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="description">
+                  <h3>Tips and variations</h3>
+                  <p>The goal is to get both sides of the French toast nicely browned, while making sure the center is cooked. Using excessive heat could scorch the outside of the toast while leaving the inside undercooked.</p>
+                  <p>Also, if you are not producing many multiples of the recipe, it is easier to evenly soak each slice of bread in the egg and milk mixture if you make it in small batches, with one egg and 1/4 cup of milk and two slices at a time in one bowl. Then, soak the two slices until almost all of the mixture has been absorbed. If the bowl is small, place the two slices on top of each other, and keep switching and flipping them, so that all four sides will absorb the mixture.</p>
+                  <p>The cooking process is too short to use most raw spices, but some fresh herbs might be very tasty.</p>
+                  <p>If using sandwich bread, a plastic sandwich container may be used for the egg-milk mixture. This allows maximum use of the mixture, as the container is a good size and shape.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="jquery/jquery-3.0.0.min.js"></script>
+  <script src="recipe-data/recipes.js"></script>
+  <script>
+    $(function() {
+        let $recipeList = $("#recipe-list");
+
+        for (let key of Object.keys(recipes)) {
+            let { name, description, rating } = recipes[key];
+            description = description || "";
+            description = description.substring(0, description.indexOf(".") + 1);
+
+            function stars(n) {
+                return "★★★★★".substring(0, n) + "☆☆☆☆☆".substring(0, 5 - n);
+            }
+
+            let $recipe = $("<div></div>")
+                .addClass("recipe")
+                .append($("<img>").attr("src", `images/${key}.jpg`))
+                .append($("<div></div>").addClass("description")
+                    .append($("<h2></h2>").text(name))
+                    .append($("<p></p>").text(description))
+                    .append($("<p></p>").addClass("recipe-rating").text(stars(rating))))
+            ;
+            $recipeList.append($recipe);
+        }
+    });
+  </script>
+</html>

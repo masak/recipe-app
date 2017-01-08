@@ -46,11 +46,11 @@
             }
 
             let $recipe = $("<div></div>")
-                .addClass("recipe")
+                .addClass("recipe recipe-card")
                 .append($("<img>").attr("src", `images/${key}.jpg`))
                 .append($("<div></div>").addClass("description")
                     .append($("<h2></h2>").text(name))
-                    .append($("<p></p>").text(description))
+                    .append($("<p></p>").addClass("lead").text(description))
                     .append($("<p></p>").addClass("recipe-rating").text(stars(rating))))
             ;
             $recipeList.append($recipe);
