@@ -41,8 +41,12 @@
             description = description || "";
             description = description.substring(0, description.indexOf(".") + 1);
 
-            function stars(n) {
-                return "★★★★★".substring(0, n) + "☆☆☆☆☆".substring(0, 5 - n);
+            let $rating = $("<p></p>").addClass("recipe-rating");
+            for (let star of "*****".substr(0, rating).split("")) {
+                $rating.append($("<span></span>").addClass("glyphicon glyphicon-star"));
+            }
+            for (let star of ".....".substr(0, 5 - rating).split("")) {
+                $rating.append($("<span></span>").addClass("glyphicon glyphicon-star-empty"));
             }
 
             let $recipe = $("<div></div>")
@@ -51,7 +55,7 @@
                 .append($("<div></div>").addClass("description")
                     .append($("<h2></h2>").text(name))
                     .append($("<p></p>").addClass("lead").text(description))
-                    .append($("<p></p>").addClass("recipe-rating").text(stars(rating))))
+                    .append($rating))
             ;
             $recipeList.append($recipe);
         }
