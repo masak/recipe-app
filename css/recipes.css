@@ -91,3 +91,21 @@ body {
   padding: 1ex 2em 1ex;
   margin-right: 2em;
 }
+
+.units {
+  background: white;
+  padding-top: 1ex;
+  padding-bottom: 0.5ex;
+  padding-left: 2em;
+  padding-right: 2em;
+  border-bottom: solid 1px #ddd;
+  margin-top: 2em;
+}
+
+.units input {
+  margin-left: 1em;
+}
+
+.units label {
+  font-weight: normal;
+}
