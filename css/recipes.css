@@ -35,8 +35,12 @@ body {
   min-height: 300px;
 }
 
-.recipe-card {
-  cursor: default;
+.recipe-card > a {
+  color: black;
+}
+
+.recipe-card > a:hover {
+  text-decoration: none;
 }
 
 .recipe-card:hover {

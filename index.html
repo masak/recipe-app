@@ -51,11 +51,12 @@
 
             let $recipe = $("<div></div>")
                 .addClass("recipe recipe-card")
-                .append($("<img>").attr("src", `images/${key}.jpg`))
-                .append($("<div></div>").addClass("description")
-                    .append($("<h2></h2>").text(name))
-                    .append($("<p></p>").addClass("lead").text(description))
-                    .append($rating))
+                .append($("<a>").attr("href", `recipe.html`)
+                    .append($("<img>").attr("src", `images/${key}.jpg`))
+                    .append($("<div></div>").addClass("description")
+                        .append($("<h2></h2>").text(name))
+                        .append($("<p></p>").addClass("lead").text(description))
+                        .append($rating)))
             ;
             $recipeList.append($recipe);
         }
