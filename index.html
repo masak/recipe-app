@@ -37,8 +37,7 @@
     $(function() {
         let $recipeList = $("#recipe-list");
 
-        for (let key of Object.keys(recipes)) {
-            let { name, description, rating } = recipes[key];
+        for (let { id, name, description, rating } of recipes) {
             description = description || "";
             description = description.substring(0, description.indexOf(".") + 1);
 
@@ -53,7 +52,7 @@
             let $recipe = $("<div></div>")
                 .addClass("recipe recipe-card")
                 .append($("<a>").attr("href", `recipe.html`)
-                    .append($("<img>").attr("src", `images/${key}.jpg`))
+                    .append($("<img>").attr("src", `images/${id}.jpg`))
                     .append($("<div></div>").addClass("description")
                         .append($("<h2></h2>").text(name))
                         .append($("<p></p>").addClass("lead").text(description))

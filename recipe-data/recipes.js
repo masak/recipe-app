@@ -1,5 +1,6 @@
-let recipes = {
-    "chicken-tikka-masala": {
+let recipes = [
+    {
+        "id": "chicken-tikka-masala",
         "name": "Chicken Tikka Masala",
         "rating": 4,
         "servings": 4,
@@ -31,7 +32,8 @@ let recipes = {
         ],
         "tips": "* Mustard seed oil is considered unfit for human consumption in many parts of the world and is therefore not always available. A poor alternative can be made by crackling 1/2 tsp of mustard seeds in approximately 2 tbsp of very hot vegetable or olive oil. Allow to cool then use in place of mustard seed oil.\n* Powdered or dried ingredients can be substituted for fresh ones, but at the expense of taste."
     },
-    "french-toast": {
+    {
+        "id": "french-toast",
         "name": "French Toast",
         "rating": 3,
         "servings": 1,
@@ -53,7 +55,8 @@ let recipes = {
         ],
         "tips": "The goal is to get both sides of the French toast nicely browned, while making sure the center is cooked. Using excessive heat could scorch the outside of the toast while leaving the inside undercooked.\n\nAlso, if you are not producing many multiples of the recipe, it is easier to evenly soak each slice of bread in the egg and milk mixture if you make it in small batches, with one egg and 1/4 cup of milk and two slices at a time in one bowl. Then, soak the two slices until almost all of the mixture has been absorbed. If the bowl is small, place the two slices on top of each other, and keep switching and flipping them, so that all four sides will absorb the mixture.\n\nThe cooking process is too short to use most raw spices, but some fresh herbs might be very tasty.\n\nIf using sandwich bread, a plastic sandwich container may be used for the egg-milk mixture. This allows maximum use of the mixture, as the container is a good size and shape."
     },
-    "hamburger": {
+    {
+        "id": "hamburger",
         "name": "Hamburger",
         "rating": 5,
         "servings": 4,
@@ -76,7 +79,8 @@ let recipes = {
         ],
         "tips": "Some suggestions of what to add to the meat include: garlic, onion flakes or a small onion, soy sauce, worcestershire sauce, mustard, olive oil, cheese, butter and/or 2 tsp of your favorite hot sauce for some kick. The amounts of herbs and/or spices are up to your local taste and meat quality. Depending on the quality of your local beef, for example, you may wish to add some beef stock to improve the flavour. If you add any liquids, mix the ground beef well then squeeze out the extra juice when forming patties.\n\n* Make sure to let the meat get to room temperature before putting on the grill or in the pan. This will help the burgers cook evenly and fully.\n* You can use almost any type of minced (ground) meat to make hamburgers, including pork, chicken, turkey, lamb, bison, venison, ostrich, or even a meat substitute such as Quorn. Some variations of hamburgers call for mixing different types of meat (e.g. ground beef and ground pork).\n* Do not add salt until right before you put the patty to cook.\n* Mixing ingredients in with the meat is purely optional. You can make a delicious burger by simply shaping patties and seasoning with kosher salt, ground pepper, and if you wish, some garlic powder and/or cayenne.\n* If your burgers fall apart, adding an egg yolk will help keep it together. Buying lean ground beef will also help, although if the meat is too lean the burger may be excessively dry. Not mixing the ground meat in the first place will also ensure the patty's integrity.\n* Try adding a pat of butter in the center of each burger for an excellent hamburger.\n* You may wish to experiment with including cheese in the centre of your burger before cooking.\n* Spices which can work well in hamburgers include black pepper, chili (either fresh or powder), Worcestershire Sauce and soy sauce. Experiment to find good combinations.\n* Almost any herb can work, including basil, oregano and parsley.\n* Some other things which are also sometimes added to hamburgers include: diced onions, bread crumbs, crushed saltine crackers.\n* Burgers can also be smoked on a grill. Smoked burgers will appear red and glazed on the outside, but browned on the inside. Smoking a burger before grilling it is an excellent way to seal in the flavorful juices.\n* Adding meat and spices together in a bowl and mixing by hand until the spices are distributed may produce better results. This will also help to stop your burgers from falling apart.\n* Some vegan patties make excellent meat substitutes, especially for Hamburgers, where strong spices make the difference close to indistinguishable."
     },
-    "pumpkin-pie": {
+    {
+        "id": "pumpkin-pie",
         "name": "Pumpkin pie",
         "rating": 4,
         "servings": 8,
@@ -104,7 +108,8 @@ let recipes = {
         ],
         "tips": "* This recipe replaces much of the sugar normally found in a pumpkin pie recipe with maple syrup. Use only real 100 percent maple syrup, not maple-flavored pancake syrup, as their sugar content is different. You can also use brown sugar instead of maple syrup.\n* Prepare the raw pumpkin by skinning and cutting into 1-inch cubes. Bake at 350 °F (180 °C) for an hour and then turn off the heat. Leave the pumpkin in the oven for another hour or two, this will reduce the moisture content. The pumpkin may also be steamed but may end up with too much moisture, resulting in a runny pie. A 10-inch (25cm)-diameter pumpkin will make 4 to 6 pies. The pumpkin may also be baked whole and skinned afterwards.\n* Pumpkin pie has no top crust, which makes most forms of decoration impossible, but for a more aesthetically-pleasing pie, put dollops of real whipped cream on each slice, or add a decorative rim to the side crust with artfully layered dough cut-outs, in the shape of fall leaves, squash or pumpkins.\n* Variant: Chocolate-covered pumpkin pie\n    * After the pie has cooled, melt 2 oz. (55g) of sweetened chocolate (milk or dark) and pour over the top of the pie. Be sure to completely cover the pumpkin. Refrigerate to set the chocolate.\n* Variant: Pumpkin Pasties\n    * Roll pie crust pastry thin and cut into circles approx 4 inches in diameter.\n\nPut a spoonful of the cool pumpkin mixture towards one side of the center of the circle. Fold over the crust into a half-circle and firmly crimp the edges closed. Slice three small slits in the top for venting. Place on a greased cookie sheet. Bake only until crust is a light golden-brown, approx 10 minutes."
     },
-    "rhubarb-pie": {
+    {
+        "id": "rhubarb-pie",
         "name": "Rhubarb pie",
         "rating": 5,
         "servings": 8,
@@ -138,7 +143,8 @@ let recipes = {
         ],
         "tips": "* If cornstarch is used as the thickener, the pie requires a longer cooling time before the filling is gelled.\n* Another variation is to use a whole egg in the mix."
     },
-    "spaghetti-alla-carbonara": {
+    {
+        "id": "spaghetti-alla-carbonara",
         "name": "Spaghetti alla Carbonara",
         "rating": 4,
         "servings": 6,
@@ -166,7 +172,8 @@ let recipes = {
         ],
         "tips": "Like most recipes, the origins of the dish are obscure but there are many legends. As 'carbonara' literally means 'coal miner's wife', some believe that the dish was first made as a hearty meal for Italian coal miners. Others say that it was originally made over charcoal grills, or that it was made with squid ink, giving it the color of coal. It has even been suggested that it was created by, or as a tribute to, the \"charcoalmen\", a secret society prominent in the unification of Italy. Also, the name may be from a Roman restaurant named Carbonara.\n\nThe dish is not present in Ada Boni's 1927 classic La Cucina Romana, and is unrecorded before the Second World War. It was first recorded after the war as a Roman dish, when many Italians were eating eggs and bacon supplied by American troops.\n\nIdeally this dish is served with a red wine (Merlot, Chianti, Montepulciano d’Abruzzo), allowed to decant for several hours, and served at 65°F (18°C)."
     },
-    "spaghetti-and-meatballs": {
+    {
+        "id": "spaghetti-and-meatballs",
         "name": "Spaghetti and meatballs",
         "rating": 3,
         "servings": 8,
@@ -210,4 +217,4 @@ let recipes = {
             "Place pasta on dinner plates. Top with meatballs, sauce and extra grated cheese."
         ]
     }
-};
+];
