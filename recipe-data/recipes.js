@@ -5,6 +5,7 @@ let recipes = [
         "rating": 4,
         "servings": 4,
         "time": "1 hour",
+        "level": "Medium",
         "lead": "Chicken tikka masala is a dish based on chunks of Indian-style roast chicken (Chicken Tikka) cooked in a tomato/curry sauce, originating in Britain but intentionally recalling Indian dishes.",
         "description": "There is no standard recipe for chicken tikka masala; a survey found that of 48 different recipes the only common ingredient was chicken. The sauce usually includes tomato and either cream or coconut cream and various spices.",
         "ingredients": [
@@ -39,6 +40,7 @@ let recipes = [
         "rating": 3,
         "servings": 1,
         "time": "10 minutes",
+        "level": "Easy",
         "lead": "French toast is a common breakfast item made by frying a piece of bread soaked in an egg batter.",
         "description": "French toast was developed as a way to use day-old stale bread. When lacking stale bread, toasting your bread lightly will help it absorb more of the egg and milk batter.\n\nFrench toast is usually served with toppings similar to those used for pancakes, waffles, and toast. Suggested toppings are:\n\n* real maple syrup, table syrup\n\n* jam, jelly, fruit syrup\n\n* whipped cream\n\n* powdered sugar\n\n* nuts\n\n* honey (as served in China)\n\n* bacon\n\n* raspberries and/or strawberries and/or blueberries\n\nIt can also be served as part of a fried breakfast with savory foods like sausages (or vegetarian equivalent), tomato (or ketchup), baked beans, fried mushrooms etc.\n\nThis recipe is easily scalable. The simplest thing to do is to memorize the recipe for two slices (1 serving), and then multiply to make more. You can coat slightly more than one serving with the wet parts of the recipe (2 1/4 - 2 1/2 normal-sized slices).",
         "ingredients": [
@@ -63,6 +65,7 @@ let recipes = [
         "rating": 5,
         "servings": 4,
         "time": "20 minutes",
+        "level": "Easy",
         "lead": "A hamburger is a variant on a sandwich involving a patty of ground meat, usually beef (known in the United Kingdom as a beefburger), or a vegetarian patty.",
         "description": "A slice of cheese on the patty makes it a cheeseburger, a common variation in the United States.",
         "ingredients": [
@@ -88,6 +91,7 @@ let recipes = [
         "rating": 4,
         "servings": 8,
         "time": "60 minutes + cooling",
+        "level": "Medium",
         "lead": "Pumpkin pie is a traditional American and Canadian holiday dessert.",
         "description": "It consists of a pumpkin-based custard baked in a single pie shell. The pie is traditionally served with whipped cream.",
         "ingredients": [
@@ -118,6 +122,7 @@ let recipes = [
         "rating": 5,
         "servings": 8,
         "time": "1 hour 45 minutes",
+        "level": "Medium",
         "lead": "This pie is fairly sweet, but also quite tangy.",
         "description": "It is best served warm with a scoop of vanilla ice cream.",
         "ingredients": [
@@ -154,6 +159,7 @@ let recipes = [
         "rating": 4,
         "servings": 6,
         "time": "60 minutes",
+        "level": "Medium",
         "lead": "Spaghetti alla carbonara is an Italian pasta dish based on eggs, pecorino romano, guanciale and black pepper.",
         "description": "It was created in the middle of the 20th century.\n\nRecipes vary, though all agree that pecorino romano, eggs, cured fatty pork and black pepper are basic. The pork is fried in fat (olive oil or lard). Then, a mixture of eggs, cheese and olive oil is combined with the hot pasta, thereby cooking the eggs. All of the ingredients are then mixed together. Guanciale is the most traditional bacon for this recipe, but pancetta is a popular substitute. In the US, it is often made with American bacon.\n\nCream is not common in Italian recipes, but is used in the United States, France, the United Kingdom, Australia and Russia (especially in Moscow). Italian Chef Luigi Carnacina used cream in his recipe Other Anglo/Franco variations on carbonara may include peas, broccoli or other vegetables added for colour. Yet another American version includes mushrooms. Many of these preparations have more sauce than the Italian versions.\n\nIn all versions of the recipe, raw eggs are added to the sauce and cook with the heat of the pasta.",
         "ingredients": [
@@ -184,6 +190,7 @@ let recipes = [
         "rating": 3,
         "servings": 8,
         "time": "1 hour",
+        "level": "Medium",
         "lead": "Most food historians agree that the union of spaghetti with meatballs is an American culinary invention with Italian roots.",
         "description": "In the vast majority of cases, Old World-Italian cuisine calls for mixing heavy meat sauces with fettuccine and tagliatelle but not spaghetti.",
         "ingredients": [

@@ -44,7 +44,7 @@
   <script src="recipe-data/recipes.js"></script>
   <script>
     $(function() {
-        let { id, name, lead, description, rating, servings, time, ingredients, procedure, tips } = recipes[1];
+        let { id, name, lead, description, rating, servings, time, level, ingredients, procedure, tips } = recipes[1];
 
         let $rating = $("<p></p>").addClass("recipe-rating");
         for (let star of "*****".substr(0, rating).split("")) {
@@ -84,7 +84,7 @@
                     .append($("<h2></h2>").text(name))
                     .append($("<p></p>").addClass("lead").text(lead))
                     .append($rating)
-                    .append($(`<div>Servings: ${servings}<br>Time: ${time}<br>Level: Easy</div>`))
+                    .append($(`<div>Servings: ${servings}<br>Time: ${time}<br>Level: ${level}</div>`))
                     .append($("<h3></h3>").text("Description"))
                     .append(markdown.toHTML(description)))));
 
