@@ -44,13 +44,7 @@
   <script src="recipe-data/recipes.js"></script>
   <script>
     $(function() {
-        let { id, name, description, rating, servings, time, ingredients, procedure, tips } = recipes[1];
-        let lead = description.indexOf(".") !== -1
-            ? description.substring(0, description.indexOf(".") + 1)
-            : description;
-        description = description.indexOf(".") !== -1
-            ? description.substring(description.indexOf(".") + 1)
-            : description;
+        let { id, name, lead, description, rating, servings, time, ingredients, procedure, tips } = recipes[1];
 
         let $rating = $("<p></p>").addClass("recipe-rating");
         for (let star of "*****".substr(0, rating).split("")) {
