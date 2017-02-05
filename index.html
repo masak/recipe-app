@@ -32,27 +32,39 @@
   </body>
   <script src="third-party/jquery-3.0.0.min.js"></script>
   <script src="third-party/icheck.js"></script>
+  <script src="third-party/handlebars-v4.0.5.js"></script>
   <script src="recipe-data/recipes.js"></script>
+
+  <script id="recipe-list-template" type="text/x-handlebars-template">
+    {{#each recipes}}
+      <div class="recipe recipe-card">
+        <a href="recipe.html?id={{id}}">
+          <img src="images/{{id}}.jpg">
+          <div class="description">
+            <h2>{{name}}</h2>
+            <p class="lead">{{lead}}</p>
+            {{#stars rating}}{{/stars}}
+          </div>
+        </a>
+      </div>
+    {{/each}}
+  </script>
+
   <script>
+    Handlebars.registerHelper("stars", (rating) => {
+        let stars = "";
+        for (let i = 0; i < 5; i++) {
+            stars += i <= rating
+                ? `<span class="glyphicon glyphicon-star"></span>`
+                : `<span class="glyphicon glyphicon-star-empty"></span>`;
+        }
+        return `<p class="recipe-rating">${stars}</p>`;
+    });
+
+    let source = $("#recipe-list-template").html();
+    let template = Handlebars.compile(source);
+
     let $recipeList = $("#recipe-list");
-
-    for (let { id, name, lead, rating } of recipes) {
-        let $rating = $("<p></p>").addClass("recipe-rating");
-        for (let i = 1; i <= rating; i++) {
-            $rating.append($("<span></span>").addClass("glyphicon glyphicon-star"));
-        }
-        for (let i = rating; i <= 5; i++) {
-            $rating.append($("<span></span>").addClass("glyphicon glyphicon-star-empty"));
-        }
-
-        let $recipe = $("<div></div>").addClass("recipe recipe-card")
-            .append($("<a>").attr("href", `recipe.html?id=${id}`)
-                .append($("<img>").attr("src", `images/${id}.jpg`))
-                .append($("<div></div>").addClass("description")
-                    .append($("<h2></h2>").text(name))
-                    .append($("<p></p>").addClass("lead").text(lead))
-                    .append($rating)));
-        $recipeList.append($recipe);
-    }
+    $recipeList.append($(template({ recipes })));
   </script>
 </html>
