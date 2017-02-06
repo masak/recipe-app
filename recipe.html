@@ -77,7 +77,11 @@
             <p class="lead">{{lead}}</p>
             {{#stars rating}}{{/stars}}
             <div>
-                Servings: {{servings}}<br>
+                Servings:
+                    <span id="decrement-servings" class="change-servings glyphicon glyphicon-minus"></span>
+                    {{servings}}
+                    <span id="increment-servings" class="change-servings glyphicon glyphicon-plus"></span>
+                    <br>
                 Time: {{time}}<br>
                 Level: {{level}}
             </div>
@@ -147,12 +151,14 @@
         return `<p class="recipe-rating">${stars}</p>`;
     });
 
+    let scalingFactor = 1;
+
     Handlebars.registerHelper("ingredient", (ingredient) => {
         let ingredientText = typeof ingredient === "string"
             ? ingredient
             : ingredient[1] === null
-                ? `${ingredient[0]} ${ingredient[2]}`
-                : ingredient.join(" ");
+                ? `${scalingFactor * ingredient[0]} ${ingredient[2]}`
+                : `${scalingFactor * ingredient[0]} ${ingredient[1]} ${ingredient[2]}`
         return ingredientText;
     });
 
@@ -180,12 +186,34 @@
     let recipeTemplate = Handlebars.compile(recipeSource);
 
     let $recipe = $("#recipe");
-    $recipe.append($(recipeTemplate(recipe)));
 
-    $('input').iCheck({
-        checkboxClass: 'icheckbox_minimal-blue',
-        radioClass: 'iradio_minimal-blue',
-        increaseArea: '20%'
+    function renderRecipe(recipe) {
+        $recipe.empty().append($(recipeTemplate(recipe)));
+
+        $('input').iCheck({
+            checkboxClass: 'icheckbox_minimal-blue',
+            radioClass: 'iradio_minimal-blue',
+            increaseArea: '20%'
+        });
+    }
+
+    renderRecipe(recipe);
+
+    let originalServings = recipe.servings;
+
+    $("#recipe").on("click", "#decrement-servings", () => {
+        if (recipe.servings <= 1) {
+            return;
+        }
+        recipe.servings--;
+        scalingFactor = recipe.servings / originalServings;
+        renderRecipe(recipe);
+    });
+
+    $("#recipe").on("click", "#increment-servings", () => {
+        recipe.servings++;
+        scalingFactor = recipe.servings / originalServings;
+        renderRecipe(recipe);
     });
 
     let $searchInput = $("#recipe-search input");

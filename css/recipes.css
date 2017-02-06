@@ -119,3 +119,12 @@ body {
 .iradio_minimal-blue {
   margin-left: 1em;
 }
+
+.change-servings {
+  color: #0e76a8;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
