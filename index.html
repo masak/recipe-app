@@ -48,7 +48,7 @@
 
             let $recipe = $("<div></div>")
                 .addClass("recipe recipe-card")
-                .append($("<a>").attr("href", `recipe.html`)
+                .append($("<a>").attr("href", `recipe.html?id=${id}`)
                     .append($("<img>").attr("src", `images/${id}.jpg`))
                     .append($("<div></div>").addClass("description")
                         .append($("<h2></h2>").text(name))

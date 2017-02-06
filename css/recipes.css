@@ -110,3 +110,8 @@ body {
 .units label {
   font-weight: normal;
 }
+
+.apology {
+  margin-top: 110px;
+  font-style: italic;
+}
