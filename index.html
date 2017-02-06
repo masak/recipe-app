@@ -64,7 +64,25 @@
     let source = $("#recipe-list-template").html();
     let template = Handlebars.compile(source);
 
-    let $recipeList = $("#recipe-list");
-    $recipeList.append($(template({ recipes })));
+    function renderRecipeList(recipes) {
+        let $recipeList = $("#recipe-list");
+        $recipeList.empty().append($(template({ recipes })));
+    }
+
+    renderRecipeList(recipes);
+
+    let $searchInput = $("#recipe-search input");
+    function render() {
+        let searchText = $searchInput.val().toLowerCase();
+        let filteredRecipes = recipes.filter((recipe) =>
+            recipe.name.toLowerCase().includes(searchText) ||
+            recipe.lead.toLowerCase().includes(searchText) ||
+            recipe.description.toLowerCase().includes(searchText)
+        );
+        renderRecipeList(filteredRecipes);
+    }
+
+    $searchInput.on("keyup", render);
+    render();
   </script>
 </html>
