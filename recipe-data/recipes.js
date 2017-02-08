@@ -73,7 +73,7 @@ let recipes = [
             "Herbs and spices (optional - see suggestions)",
             "Cheese (optional - see suggestions)",
             "Salad (lettuce, spinach, alfalfa sprouts, tomato, onion etc. - optional)",
-            [1, null, "hamburger bun for each burger"]
+            [4, null, "hamburger buns"]
         ],
         "procedure": [
             "Remove the ground beef from the package and shape by hand into burgers. You should get between 4-6 burgers from 500g (1.1 lb) of beef.",
@@ -93,10 +93,10 @@ let recipes = [
         "time": "60 minutes + cooling",
         "level": "Medium",
         "lead": "Pumpkin pie is a traditional American and Canadian holiday dessert.",
-        "description": "It consists of a pumpkin-based custard baked in a single pie shell. The pie is traditionally served with whipped cream.",
+        "description": "It consists of a pumpkin-based custard baked in a single pie shell. The pie is traditionally served with whipped cream.\n\nUse the smaller 'Sugar Pumpkin' instead of the big 'Jack O Lantern' pumpkin. The smaller 'Sugar Pumpkin' has a firm and smooth texture while the larger 'Jack O Lantern' pumpkin has more stringy or fibrous texture and more watery for a flesh.",
         "ingredients": [
             [5, "dl", "milk, scalded"],
-            [450, "g", "pumpkin, cooked and strained (or plain canned pumpkin). Use the smaller 'Sugar Pumpkin' instead of the big 'Jack O Lantern' pumpkin. The smaller 'Sugar Pumpkin' has a firm and smooth texture while the larger 'Jack O Lantern' pumpkin has more stringy or fibrous texture and more watery for a flesh."],
+            [500, "g", "pumpkin, cooked and strained (or plain canned pumpkin)"],
             [240, "ml", "maple syrup"],
             [30, "g", "sugar"],
             [1, "tbsp", "flour"],
@@ -126,12 +126,12 @@ let recipes = [
         "lead": "This pie is fairly sweet, but also quite tangy.",
         "description": "It is best served warm with a scoop of vanilla ice cream.",
         "ingredients": [
-            [310, "g", "flour"],
+            [300, "g", "flour"],
             [1, "tsp", "salt"],
             [1, "tsp", "sugar (optional)"],
-            [225, "g", "butter, cold"],
+            [250, "g", "butter, cold"],
             [1, "dl", "cold water"],
-            [1100, "g", "rhubarb stalks"],
+            [1000, "g", "rhubarb stalks"],
             [3.5, "dl", "sugar"],
             [0.5, "dl", "cornstarch or tapioca pearls"],
             [0.5, "tsp", "salt"]
