@@ -46,7 +46,7 @@ let recipes = [
         "ingredients": [
             [1, null, "egg"],
             [0.5, "dl", "milk"],
-            [2, "slices", "bread, preferably one-inch slices of French bread"],
+            [2, "slices", "bread, preferably 2.5 cm slices of French bread"],
             "butter (best), margarine, or cooking oil"
         ],
         "procedure": [
@@ -105,7 +105,7 @@ let recipes = [
             [1, "tbsp", "cinnamon"],
             [0.25, "tbsp", "nutmeg (optional)"],
             [2, null, "large eggs, beaten"],
-            [1, null, "unbaked nine-inch pie shell"]
+            [1, null, "unbaked 23 cm pie shell"]
         ],
         "procedure": [
             "Preheat oven to 180 °C.",
@@ -114,7 +114,7 @@ let recipes = [
             "Bake at 180 °C for 45 minutes.",
             "Let cool and serve."
         ],
-        "tips": "* This recipe replaces much of the sugar normally found in a pumpkin pie recipe with maple syrup. Use only real 100 percent maple syrup, not maple-flavored pancake syrup, as their sugar content is different. You can also use brown sugar instead of maple syrup.\n* Prepare the raw pumpkin by skinning and cutting into 1-inch cubes. Bake at 180 °C for an hour and then turn off the heat. Leave the pumpkin in the oven for another hour or two, this will reduce the moisture content. The pumpkin may also be steamed but may end up with too much moisture, resulting in a runny pie. A 10-inch (25cm)-diameter pumpkin will make 4 to 6 pies. The pumpkin may also be baked whole and skinned afterwards.\n* Pumpkin pie has no top crust, which makes most forms of decoration impossible, but for a more aesthetically-pleasing pie, put dollops of real whipped cream on each slice, or add a decorative rim to the side crust with artfully layered dough cut-outs, in the shape of fall leaves, squash or pumpkins.\n* Variant: Chocolate-covered pumpkin pie\n    * After the pie has cooled, melt 2 oz. (55g) of sweetened chocolate (milk or dark) and pour over the top of the pie. Be sure to completely cover the pumpkin. Refrigerate to set the chocolate.\n* Variant: Pumpkin Pasties\n    * Roll pie crust pastry thin and cut into circles approx 4 inches in diameter.\n\nPut a spoonful of the cool pumpkin mixture towards one side of the center of the circle. Fold over the crust into a half-circle and firmly crimp the edges closed. Slice three small slits in the top for venting. Place on a greased cookie sheet. Bake only until crust is a light golden-brown, approx 10 minutes."
+        "tips": "* This recipe replaces much of the sugar normally found in a pumpkin pie recipe with maple syrup. Use only real 100 percent maple syrup, not maple-flavored pancake syrup, as their sugar content is different. You can also use brown sugar instead of maple syrup.\n* Prepare the raw pumpkin by skinning and cutting into 2.5 cm cubes. Bake at 180 °C for an hour and then turn off the heat. Leave the pumpkin in the oven for another hour or two, this will reduce the moisture content. The pumpkin may also be steamed but may end up with too much moisture, resulting in a runny pie. A 25 cm diameter pumpkin will make 4 to 6 pies. The pumpkin may also be baked whole and skinned afterwards.\n* Pumpkin pie has no top crust, which makes most forms of decoration impossible, but for a more aesthetically-pleasing pie, put dollops of real whipped cream on each slice, or add a decorative rim to the side crust with artfully layered dough cut-outs, in the shape of fall leaves, squash or pumpkins.\n* Variant: Chocolate-covered pumpkin pie\n    * After the pie has cooled, melt 2 oz. (55g) of sweetened chocolate (milk or dark) and pour over the top of the pie. Be sure to completely cover the pumpkin. Refrigerate to set the chocolate.\n* Variant: Pumpkin Pasties\n    * Roll pie crust pastry thin and cut into circles approx 10 cm in diameter.\n\nPut a spoonful of the cool pumpkin mixture towards one side of the center of the circle. Fold over the crust into a half-circle and firmly crimp the edges closed. Slice three small slits in the top for venting. Place on a greased cookie sheet. Bake only until crust is a light golden-brown, approx 10 minutes."
     },
     {
         "id": "rhubarb-pie",
@@ -138,7 +138,7 @@ let recipes = [
         ],
         "procedure": [
             "Clean and trim the rhubarb stalks.",
-            "Cut the stalks into 1/2 inch to 1 inch (1.25 to 2.5cm) sections.",
+            "Cut the stalks into 1.25 cm to 2.5 cm sections.",
             "Add sugar, cornstarch or tapioca, and salt.",
             "Stir until rhubarb is evenly coated with dry ingredients.",
             "Whisk flour, salt and sugar together in a deep bowl.",
@@ -148,7 +148,7 @@ let recipes = [
             "Form the dough into a ball with your hands, kneading in any loose flour. This should be done as quickly as possible to avoid melting the butter in the dough.",
             "Chill the dough for 10-20 minutes.",
             "Cut the dough evenly in half.",
-            "On a lightly floured board, roll each half out until it will cover a 20 cm (9 inch) pie dish, with about 2 cm (3/4 inch) overhang.",
+            "On a lightly floured board, roll each half out until it will cover a 20 cm pie dish, with about 2 cm overhang.",
             "Place pie on lowest rack in oven. Bake for 15 minutes. Reduce oven temperature to 175 °C, and continue baking for 40 to 45 minutes. Serve warm or cold."
         ],
         "tips": "* If cornstarch is used as the thickener, the pie requires a longer cooling time before the filling is gelled.\n* Another variation is to use a whole egg in the mix."
@@ -173,7 +173,7 @@ let recipes = [
             "salt"
         ],
         "procedure": [
-            "Dice the pancetta into 2.5 cm (1 inch) pieces.",
+            "Dice the pancetta into 2.5 cm pieces.",
             "Bring a big pot of water to a boil and add salt to taste when it begins to simmer.",
             "Cook the spaghetti until it is al dente and drain it, reserving 236 ml (1 cup) of water.",
             "As spaghetti is cooking, heat the olive oil in a large skillet over a medium-high heat. When the oil is hot, add the pancetta and cook for about 10 minutes over a low flame until the pancetta has rendered most of its fat but is still chewy and barely browned.",
@@ -223,7 +223,7 @@ let recipes = [
             "Combine ground meat, bread crumbs, grated cheese, minced parsley and lightly beaten eggs (add eggs one at a time while stirring ingredients together). Sprinkle with minced garlic, two tablespoons of olive oil and seasonings. Then mix well until everything is combined.",
             "Form meat mixture into meatballs, using an ice cream scoop or your hands, pressing lightly, just enough so that meat holds together, but not so much that the meat is very compressed or the meatballs will be tough and dry.",
             "In a heavy skillet, heat olive oil over medium low heat. Add whole garlic cloves. Turn the garlic cloves to color them on all sides, then when lightly roasted, press them into the oil; as they brown, remove them.",
-            "As soon as the oil is hot, add the meatballs to the skillet, leaving about one and a half inches between them so that they can be easily turned. Turn them often using a spatula or large spoon so that they don't stick. Make sure there is enough oil in the pan (about one half inch). You don't need extra virgin olive oil for this, any good quality Italian olive oil will do.",
+            "As soon as the oil is hot, add the meatballs to the skillet, leaving about 4 cm between them so that they can be easily turned. Turn them often using a spatula or large spoon so that they don't stick. Make sure there is enough oil in the pan (about 1 cm). You don't need extra virgin olive oil for this, any good quality Italian olive oil will do.",
             "When the meatballs are browned well on all sides, remove from the pan and drain on paper towels. Then add the next batch to the pan and continue until all are cooked.",
             "Add the pasta to the water now boiling in your pot and cook until al dente. This should take about 12 minutes.",
             "Add pepper flakes, garlic and finely chopped onion in the same oil you used to cook the meatballs. Sauté five to seven minutes, until onion bits are soft. Add beef stock, crushed tomatoes, and herbs. Bring to a simmer and cook for about 10 minutes.",
