@@ -32,7 +32,7 @@ let recipes = [
             "Add the cream, garam masala and chopped cilantro and simmer for a few minutes.",
             "Garnish with fresh coriander and serve with Naan bread, rice coloured yellow with turmeric, onion bahjis and/or a glass of white wine."
         ],
-        "tips": "* Mustard seed oil is considered unfit for human consumption in many parts of the world and is therefore not always available. A poor alternative can be made by crackling 1/2 tsp of mustard seeds in approximately 2 tbsp of very hot vegetable or olive oil. Allow to cool then use in place of mustard seed oil.\n* Powdered or dried ingredients can be substituted for fresh ones, but at the expense of taste."
+        "tips": "* Mustard seed oil is considered unfit for human consumption in many parts of the world and is therefore not always available. A poor alternative can be made by crackling 0.5 tsp of mustard seeds in approximately 2 tbsp of very hot vegetable or olive oil. Allow to cool then use in place of mustard seed oil.\n* Powdered or dried ingredients can be substituted for fresh ones, but at the expense of taste."
     },
     {
         "id": "french-toast",
@@ -42,7 +42,7 @@ let recipes = [
         "time": "10 minutes",
         "level": "Easy",
         "lead": "French toast is a common breakfast item made by frying a piece of bread soaked in an egg batter.",
-        "description": "French toast was developed as a way to use day-old stale bread. When lacking stale bread, toasting your bread lightly will help it absorb more of the egg and milk batter.\n\nFrench toast is usually served with toppings similar to those used for pancakes, waffles, and toast. Suggested toppings are:\n\n* real maple syrup, table syrup\n\n* jam, jelly, fruit syrup\n\n* whipped cream\n\n* powdered sugar\n\n* nuts\n\n* honey (as served in China)\n\n* bacon\n\n* raspberries and/or strawberries and/or blueberries\n\nIt can also be served as part of a fried breakfast with savory foods like sausages (or vegetarian equivalent), tomato (or ketchup), baked beans, fried mushrooms etc.\n\nThis recipe is easily scalable. The simplest thing to do is to memorize the recipe for two slices (1 serving), and then multiply to make more. You can coat slightly more than one serving with the wet parts of the recipe (2 1/4 - 2 1/2 normal-sized slices).",
+        "description": "French toast was developed as a way to use day-old stale bread. When lacking stale bread, toasting your bread lightly will help it absorb more of the egg and milk batter.\n\nFrench toast is usually served with toppings similar to those used for pancakes, waffles, and toast. Suggested toppings are:\n\n* real maple syrup, table syrup\n\n* jam, jelly, fruit syrup\n\n* whipped cream\n\n* powdered sugar\n\n* nuts\n\n* honey (as served in China)\n\n* bacon\n\n* raspberries and/or strawberries and/or blueberries\n\nIt can also be served as part of a fried breakfast with savory foods like sausages (or vegetarian equivalent), tomato (or ketchup), baked beans, fried mushrooms etc.\n\nThis recipe is easily scalable. The simplest thing to do is to memorize the recipe for two slices (1 serving), and then multiply to make more. You can coat slightly more than one serving with the wet parts of the recipe (2.25 - 2.5 normal-sized slices).",
         "ingredients": [
             [1, null, "egg"],
             [0.5, "dl", "milk"],
@@ -57,7 +57,7 @@ let recipes = [
             "Brown both sides bread.",
             "Serve on plates, usually two slices per person, with toppings as desired."
         ],
-        "tips": "The goal is to get both sides of the French toast nicely browned, while making sure the center is cooked. Using excessive heat could scorch the outside of the toast while leaving the inside undercooked.\n\nAlso, if you are not producing many multiples of the recipe, it is easier to evenly soak each slice of bread in the egg and milk mixture if you make it in small batches, with one egg and 1/4 cup of milk and two slices at a time in one bowl. Then, soak the two slices until almost all of the mixture has been absorbed. If the bowl is small, place the two slices on top of each other, and keep switching and flipping them, so that all four sides will absorb the mixture.\n\nThe cooking process is too short to use most raw spices, but some fresh herbs might be very tasty.\n\nIf using sandwich bread, a plastic sandwich container may be used for the egg-milk mixture. This allows maximum use of the mixture, as the container is a good size and shape."
+        "tips": "The goal is to get both sides of the French toast nicely browned, while making sure the center is cooked. Using excessive heat could scorch the outside of the toast while leaving the inside undercooked.\n\nAlso, if you are not producing many multiples of the recipe, it is easier to evenly soak each slice of bread in the egg and milk mixture if you make it in small batches, with one egg and 0.5 dl of milk and two slices at a time in one bowl. Then, soak the two slices until almost all of the mixture has been absorbed. If the bowl is small, place the two slices on top of each other, and keep switching and flipping them, so that all four sides will absorb the mixture.\n\nThe cooking process is too short to use most raw spices, but some fresh herbs might be very tasty.\n\nIf using sandwich bread, a plastic sandwich container may be used for the egg-milk mixture. This allows maximum use of the mixture, as the container is a good size and shape."
     },
     {
         "id": "hamburger",
@@ -175,9 +175,9 @@ let recipes = [
         "procedure": [
             "Dice the pancetta into 2.5 cm pieces.",
             "Bring a big pot of water to a boil and add salt to taste when it begins to simmer.",
-            "Cook the spaghetti until it is al dente and drain it, reserving 236 ml (1 cup) of water.",
+            "Cook the spaghetti until it is al dente and drain it, reserving 2.5 dl of water.",
             "As spaghetti is cooking, heat the olive oil in a large skillet over a medium-high heat. When the oil is hot, add the pancetta and cook for about 10 minutes over a low flame until the pancetta has rendered most of its fat but is still chewy and barely browned.",
-            "In a bowl, slowly whisk about 118 ml (1/2 cup) of the pasta water into the egg yolks. Add the grated cheese and mix thoroughly with a fork.",
+            "In a bowl, slowly whisk about 118 ml of the pasta water into the egg yolks. Add the grated cheese and mix thoroughly with a fork.",
             "Strain the spaghetti and transfer it immediately to the skillet with the pancetta. Toss it and turn off the heat.",
             "Add the egg and cheese mixture to the pasta while stirring in the remaining pasta water to help thin the sauce.",
             "Add the pepper and toss all the ingredients to coat the pasta."
