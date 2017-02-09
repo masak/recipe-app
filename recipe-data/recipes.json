@@ -73,7 +73,7 @@
             "Herbs and spices (optional - see suggestions)",
             "Cheese (optional - see suggestions)",
             "Salad (lettuce, spinach, alfalfa sprouts, tomato, onion etc. - optional)",
-            [4, null, "hamburger buns"]
+            [6, null, "hamburger buns"]
         ],
         "procedure": [
             "Remove the ground beef from the package and shape by hand into burgers. You should get between 4-6 burgers from 500 g of beef.",
