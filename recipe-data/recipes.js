@@ -11,7 +11,7 @@ let recipes = [
         "ingredients": [
             [675, "g", "cooked Chicken Tikka"],
             [2, "tbsp", "mustard seed oil"],
-            [4, "large cloves of", "garlic, finely chopped"],
+            [4, "large cloves", "of garlic, finely chopped"],
             [200, "g", "onions, finely chopped (optional)"],
             [1, "can", "of plum tomatoes, chopped"],
             [1, null, "chopped fresh green chilli"],
@@ -46,7 +46,7 @@ let recipes = [
         "ingredients": [
             [1, null, "egg"],
             [0.5, "dl", "milk"],
-            [2, "slices", "bread, preferably 2.5 cm slices of French bread"],
+            [2, "slices", "of bread, preferably 2.5 cm slices of French bread"],
             "butter (best), margarine, or cooking oil"
         ],
         "procedure": [
@@ -209,9 +209,9 @@ let recipes = [
             [0.5, "tsp", "black pepper"],
             [0.5, "tsp", "salt"],
             "olive oil",
-            [3, "cloves", "garlic"],
+            [3, "cloves", "of garlic"],
             [0.5, "tsp", "crushed red chile pepper flakes"],
-            [4, "cloves", "garlic, crushed or chopped"],
+            [4, "cloves", "of garlic, crushed or chopped"],
             [1, null, "small, finely chopped onion"],
             [2.5, "dl", "beefstock"],
             [1, "kg", "crushed tomatoes"],
