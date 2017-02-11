@@ -9,7 +9,7 @@ let recipes = [
         "lead": "Chicken tikka masala is a dish based on chunks of Indian-style roast chicken (Chicken Tikka) cooked in a tomato/curry sauce, originating in Britain but intentionally recalling Indian dishes.",
         "description": "There is no standard recipe for chicken tikka masala; a survey found that of 48 different recipes the only common ingredient was chicken. The sauce usually includes tomato and either cream or coconut cream and various spices.",
         "ingredients": [
-            [675, "g", "cooked Chicken Tikka"],
+            [700, "g", "cooked Chicken Tikka"],
             [2, "tbsp", "mustard seed oil"],
             [4, "large cloves", "of garlic, finely chopped"],
             [200, "g", "onions, finely chopped (optional)"],
@@ -97,13 +97,13 @@ let recipes = [
         "ingredients": [
             [5, "dl", "milk, scalded"],
             [500, "g", "pumpkin, cooked and strained (or plain canned pumpkin)"],
-            [240, "ml", "maple syrup"],
+            [2.5, "dl", "maple syrup"],
             [30, "g", "sugar"],
             [1, "tbsp", "flour"],
-            [0.5, "tbsp", "salt"],
+            [1.5, "tsp", "salt"],
             [1, "tbsp", "ginger"],
             [1, "tbsp", "cinnamon"],
-            [0.25, "tbsp", "nutmeg (optional)"],
+            [1, "tsp", "nutmeg (optional)"],
             [2, null, "large eggs, beaten"],
             [1, null, "unbaked 23 cm pie shell"]
         ],
@@ -131,7 +131,7 @@ let recipes = [
             [1, "tsp", "sugar (optional)"],
             [250, "g", "butter, cold"],
             [1, "dl", "cold water"],
-            [1000, "g", "rhubarb stalks"],
+            [1, "kg", "rhubarb stalks"],
             [3.5, "dl", "sugar"],
             [0.5, "dl", "cornstarch or tapioca pearls"],
             [0.5, "tsp", "salt"]
@@ -199,7 +199,7 @@ let recipes = [
             [500, "g", "dry spaghetti"],
             [900, "g", "ground chuck"],
             [900, "g", "ground pork shoulder"],
-            [340, "g", "seasoned bread crumbs"],
+            [350, "g", "seasoned bread crumbs"],
             [2.5, "dl", "grated Parmesan cheese or Romano cheese"],
             [2, "dl", "fresh parsley, minced"],
             [4, null, "eggs"],
