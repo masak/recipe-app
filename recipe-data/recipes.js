@@ -108,7 +108,7 @@ let recipes = [
             [1, null, "unbaked 23 cm pie shell"]
         ],
         "procedure": [
-            "Preheat oven to 180 °C.",
+            "Preheat oven to 175 °C.",
             "Blend all ingredients, except the pie shell, together.",
             "Pour into the unbaked pie shell.",
             "Bake at 175 °C for 45 minutes.",
