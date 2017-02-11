@@ -168,7 +168,13 @@
             : 0;
         return (Math.round(value / granularity) * granularity).toFixed(decimals)
             .replace(/\.0+$/, "")
-            .replace(/(?<=\.[^0]+)0+$/, "");
+            .replace(/(?<=\.[^0]+)0+$/, "")
+            .replace(/^0\.25$/, "¼")
+            .replace(/^0\.5$/, "½")
+            .replace(/^0\.75$/, "¾")
+            .replace(/\.25$/, "¼")
+            .replace(/\.5$/, "½")
+            .replace(/\.75$/, "¾");
     }
 
     Handlebars.registerHelper("ingredient", (ingredient) => {
