@@ -129,7 +129,7 @@
   </script>
 
   <script>
-    let unitSystem = "metric";
+    let unitSystem = (localStorage && localStorage.unitSystem) || "metric";
 
     Handlebars.registerHelper("unitSelector", () => {
         function checkedIf(expectedUnits) {
@@ -374,11 +374,13 @@
 
     $("#recipe").on("ifChecked", "#unit-metric", () => {
         unitSystem = "metric";
+        localStorage.unitSystem = "metric";
         renderRecipe(recipe);
     });
 
     $("#recipe").on("ifChecked", "#unit-us", () => {
         unitSystem = "us";
+        localStorage.unitSystem = "us";
         renderRecipe(recipe);
     });
   </script>
