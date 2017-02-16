@@ -33,7 +33,6 @@
   <script src="third-party/jquery-3.0.0.min.js"></script>
   <script src="third-party/icheck.js"></script>
   <script src="third-party/handlebars-v4.0.5.js"></script>
-  <script src="recipe-data/recipes.js"></script>
 
   <script id="recipe-list-template" type="text/x-handlebars-template">
     {{#each recipes}}
@@ -69,20 +68,26 @@
         $recipeList.empty().append($(template({ recipes })));
     }
 
-    renderRecipeList(recipes);
+    $.getJSON("recipe-data/recipes.json")
+        .done((recipes) => {
+            renderRecipeList(recipes);
 
-    let $searchInput = $("#recipe-search input");
-    function render() {
-        let searchText = $searchInput.val().toLowerCase();
-        let filteredRecipes = recipes.filter((recipe) =>
-            recipe.name.toLowerCase().includes(searchText) ||
-            recipe.lead.toLowerCase().includes(searchText) ||
-            recipe.description.toLowerCase().includes(searchText)
-        );
-        renderRecipeList(filteredRecipes);
-    }
+            let $searchInput = $("#recipe-search input");
+            function render() {
+                let searchText = $searchInput.val().toLowerCase();
+                let filteredRecipes = recipes.filter((recipe) =>
+                    recipe.name.toLowerCase().includes(searchText) ||
+                    recipe.lead.toLowerCase().includes(searchText) ||
+                    recipe.description.toLowerCase().includes(searchText)
+                );
+                renderRecipeList(filteredRecipes);
+            }
 
-    $searchInput.on("keyup", render);
-    render();
+            $searchInput.on("keyup", render);
+            render();
+        })
+        .fail(() => {
+            alert("Failed to load recipes; sorry.");
+        });
   </script>
 </html>

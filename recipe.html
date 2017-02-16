@@ -36,7 +36,6 @@
   <script src="third-party/icheck.js"></script>
   <script src="third-party/handlebars-v4.0.5.js"></script>
   <script src="third-party/markdown.min.js"></script>
-  <script src="recipe-data/recipes.js"></script>
 
   <script id="recipe-list-template" type="text/x-handlebars-template">
     {{#each recipes}}
@@ -311,77 +310,77 @@
     let id = match
         ? match[1]
         : null;
-    let recipe = recipes.find((r) => r.id === id);
 
-    let recipeSource = recipe
-        ? $("#recipe-template").html()
-        : $("#recipe-not-found-template").html();
-    let recipeTemplate = Handlebars.compile(recipeSource);
+    $.getJSON("recipe-data/recipes.json")
+        .done((recipes) => {
+            let recipe = recipes.find((r) => r.id === id);
 
-    let $recipe = $("#recipe");
+            let $recipe = $("#recipe");
+            let recipeSource = recipe
+                ? $("#recipe-template").html()
+                : $("#recipe-not-found-template").html();
+            let recipeTemplate = Handlebars.compile(recipeSource);
 
-    function renderRecipe(recipe) {
-        $recipe.empty().append($(recipeTemplate(recipe)));
+            function renderRecipe(recipe) {
+                $recipe.empty().append($(recipeTemplate(recipe)));
 
-        $('input').iCheck({
-            checkboxClass: 'icheckbox_minimal-blue',
-            radioClass: 'iradio_minimal-blue',
-            increaseArea: '20%'
+                $('input').iCheck({
+                    checkboxClass: 'icheckbox_minimal-blue',
+                    radioClass: 'iradio_minimal-blue',
+                    increaseArea: '20%'
+                });
+            }
+
+            renderRecipe(recipe);
+
+            let $searchInput = $("#recipe-search input");
+            function render() {
+                let searchText = $searchInput.val().toLowerCase();
+                let filteredRecipes = searchText === ""
+                    ? []
+                    : recipes.filter((recipe) =>
+                        recipe.name.toLowerCase().includes(searchText) ||
+                        recipe.lead.toLowerCase().includes(searchText) ||
+                        recipe.description.toLowerCase().includes(searchText)
+                    );
+                $recipe.toggle(searchText === "");
+                renderRecipeList(filteredRecipes);
+            }
+
+            $searchInput.on("keyup", render);
+            render();
+
+            let originalServings = recipe.servings;
+
+            $("#recipe").on("click", "#decrement-servings", () => {
+                if (recipe.servings <= 1) {
+                    return;
+                }
+                recipe.servings--;
+                scalingFactor = recipe.servings / originalServings;
+                renderRecipe(recipe);
+            });
+
+            $("#recipe").on("click", "#increment-servings", () => {
+                recipe.servings++;
+                scalingFactor = recipe.servings / originalServings;
+                renderRecipe(recipe);
+            });
+
+            $("#recipe").on("ifChecked", "#unit-metric", () => {
+                unitSystem = "metric";
+                localStorage.unitSystem = "metric";
+                renderRecipe(recipe);
+            });
+
+            $("#recipe").on("ifChecked", "#unit-us", () => {
+                unitSystem = "us";
+                localStorage.unitSystem = "us";
+                renderRecipe(recipe);
+            });
+        })
+        .fail(() => {
+            alert("Failed to load recipes; sorry.");
         });
-    }
-
-    renderRecipe(recipe);
-
-    let originalServings = recipe.servings;
-
-    $("#recipe").on("click", "#decrement-servings", () => {
-        if (recipe.servings <= 1) {
-            return;
-        }
-        recipe.servings--;
-        scalingFactor = recipe.servings / originalServings;
-        renderRecipe(recipe);
-    });
-
-    $("#recipe").on("click", "#increment-servings", () => {
-        recipe.servings++;
-        scalingFactor = recipe.servings / originalServings;
-        renderRecipe(recipe);
-    });
-
-    let $searchInput = $("#recipe-search input");
-    function render() {
-        let searchText = $searchInput.val().toLowerCase();
-        let filteredRecipes = searchText === ""
-            ? []
-            : recipes.filter((recipe) =>
-                recipe.name.toLowerCase().includes(searchText) ||
-                recipe.lead.toLowerCase().includes(searchText) ||
-                recipe.description.toLowerCase().includes(searchText)
-            );
-        $recipe.toggle(searchText === "");
-        renderRecipeList(filteredRecipes);
-    }
-
-    $searchInput.on("keyup", render);
-    render();
-
-    $("#recipe").on("click", "#increment-servings", () => {
-        recipe.servings++;
-        scalingFactor = recipe.servings / originalServings;
-        renderRecipe(recipe);
-    });
-
-    $("#recipe").on("ifChecked", "#unit-metric", () => {
-        unitSystem = "metric";
-        localStorage.unitSystem = "metric";
-        renderRecipe(recipe);
-    });
-
-    $("#recipe").on("ifChecked", "#unit-us", () => {
-        unitSystem = "us";
-        localStorage.unitSystem = "us";
-        renderRecipe(recipe);
-    });
   </script>
 </html>
