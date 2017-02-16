@@ -39,10 +39,10 @@
 
         for (let { id, name, lead, rating } of recipes) {
             let $rating = $("<p></p>").addClass("recipe-rating");
-            for (let star of "*****".substr(0, rating).split("")) {
+            for (let i = 1; i <= rating; i++) {
                 $rating.append($("<span></span>").addClass("glyphicon glyphicon-star"));
             }
-            for (let star of ".....".substr(0, 5 - rating).split("")) {
+            for (let i = rating; i <= 5; i++) {
                 $rating.append($("<span></span>").addClass("glyphicon glyphicon-star-empty"));
             }
 
