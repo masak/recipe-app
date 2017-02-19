@@ -34,29 +34,25 @@
   <script src="third-party/icheck.js"></script>
   <script src="recipe-data/recipes.js"></script>
   <script>
-    $(() => {
-        let $recipeList = $("#recipe-list");
+    let $recipeList = $("#recipe-list");
 
-        for (let { id, name, lead, rating } of recipes) {
-            let $rating = $("<p></p>").addClass("recipe-rating");
-            for (let i = 1; i <= rating; i++) {
-                $rating.append($("<span></span>").addClass("glyphicon glyphicon-star"));
-            }
-            for (let i = rating; i <= 5; i++) {
-                $rating.append($("<span></span>").addClass("glyphicon glyphicon-star-empty"));
-            }
-
-            let $recipe = $("<div></div>")
-                .addClass("recipe recipe-card")
-                .append($("<a>").attr("href", `recipe.html?id=${id}`)
-                    .append($("<img>").attr("src", `images/${id}.jpg`))
-                    .append($("<div></div>").addClass("description")
-                        .append($("<h2></h2>").text(name))
-                        .append($("<p></p>").addClass("lead").text(lead))
-                        .append($rating)))
-            ;
-            $recipeList.append($recipe);
+    for (let { id, name, lead, rating } of recipes) {
+        let $rating = $("<p></p>").addClass("recipe-rating");
+        for (let i = 1; i <= rating; i++) {
+            $rating.append($("<span></span>").addClass("glyphicon glyphicon-star"));
         }
-    });
+        for (let i = rating; i <= 5; i++) {
+            $rating.append($("<span></span>").addClass("glyphicon glyphicon-star-empty"));
+        }
+
+        let $recipe = $("<div></div>").addClass("recipe recipe-card")
+            .append($("<a>").attr("href", `recipe.html?id=${id}`)
+                .append($("<img>").attr("src", `images/${id}.jpg`))
+                .append($("<div></div>").addClass("description")
+                    .append($("<h2></h2>").text(name))
+                    .append($("<p></p>").addClass("lead").text(lead))
+                    .append($rating)));
+        $recipeList.append($recipe);
+    }
   </script>
 </html>

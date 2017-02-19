@@ -44,29 +44,21 @@
   <script src="third-party/markdown.min.js"></script>
   <script src="recipe-data/recipes.js"></script>
   <script>
-    $(() => {
-        $('input').iCheck({
-            checkboxClass: 'icheckbox_minimal-blue',
-            radioClass: 'iradio_minimal-blue',
-            increaseArea: '20%'
-        });
+    $('input').iCheck({
+        checkboxClass: 'icheckbox_minimal-blue',
+        radioClass: 'iradio_minimal-blue',
+        increaseArea: '20%'
+    });
 
-        let match = location.search.match(/id=([^&]*)/);
-        let id = match
-            ? match[1]
-            : null;
-        let recipe = recipes.find((r) => r.id === id);
+    let match = location.search.match(/id=([^&]*)/);
+    let id = match
+        ? match[1]
+        : null;
 
-        let $recipe = $(".recipe");
-        if (!recipe) {
-            $recipe.append($("<div></div>").addClass("row")
-                .append($("<div></div>").addClass("col-md-12")
-                    .append($("<center></center>").addClass("lead apology")
-                        .text("Sorry; recipe not found."))));
+    let $recipe = $(".recipe");
+    let recipe = recipes.find((r) => r.id === id);
 
-            return;
-        }
-
+    if (recipe) {
         let { name, lead, description, rating, servings, time, level, ingredients, procedure, tips } = recipe;
 
         let $rating = $("<p></p>").addClass("recipe-rating");
@@ -120,6 +112,12 @@
                 .append($("<div></div>").addClass("description")
                     .append($("<h3></h3>").text("Tips and variations"))
                     .append(markdown.toHTML(tips)))));
-    });
+    }
+    else {  // no recipe
+        $recipe.append($("<div></div>").addClass("row")
+            .append($("<div></div>").addClass("col-md-12")
+                .append($("<center></center>").addClass("lead apology")
+                    .text("Sorry; recipe not found."))));
+    }
   </script>
 </html>
